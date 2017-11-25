@@ -1,0 +1,50 @@
+[
+  {
+        "name": "v0.1",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Initial alpha release."]
+	},
+  {
+        "name": "v0.1.1",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Fix modal accent colors.", "Fix links in pop-up breaking the timer."]
+  },
+  {
+        "name": "v0.1.2",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Fix highlighting of the FAB on mobile. Not a pressing issue, but still a good one to fix."]
+  },
+  {
+        "name": "v0.1.3",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Fix the insane amount of getElementById's. Thanks, James Fenn.", "I also removed all inline styling, because apparently, that's important for clean code. Whatever."]
+  },
+  {
+        "name": "v0.1.4",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Add Google Analytics. Now, I'll be able to see how many people are nice enough to test 5217 web, what demographic they’re from, and what device they used to access the site. Isn’t that exciting?! No? Oh, ok."]
+  },
+  {
+        "name": "v0.1.5",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Fix notification icon."]
+  },
+  {
+        "name": "v0.1.6",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["Time for a bunch of fixes and changes, oh boy oh boy! Since Internet Explorer is such an incredible (read: horrible), secure (read: insecure af) and fast (read: slower than my pet snail) web browser, I made a few fixes to have 5217 Web work in IE.", "Oh, you say you like Edge? Well, that crappy browser is supported, too.", "Additionally, I adjusted when the color of the number changes to the 30-minute mark (it was at 35, which wasn’t what the Android app did).", "But wait, there’s more! We’ve got a new feature. It’s that little message above the number during the break cycle to remind you to do something instead of staring at our beautiful app. I mean, you can if you want to. But it’s not advised if you really want to take advantage of the science behind 5217.", "<i>Phew.</i> That's a lot of change(log)."]
+  },
+  {
+        "name": "v0.1.7",
+        "reltype": "alpha",
+        "reldate": "11.19.17",
+        "description": ["A few days ago, xxyzz created a PR for fixing Edge/IE, added tabnabbing prevention, and even added those randomized break notification messages. Not knowing this, I began working on all of that with v0.1.6. Haha, I should check GitHub more often.", "So yeah, tabnabbing precautions have been taking with outgoing links.", "Edge/IE has been fixed again… so it’s SUPER supported! haha", "xxyzz’s implementation of the randomized break notifications was much better than mine, so I was able to improve the break message above the numbers."]
+  }
+]

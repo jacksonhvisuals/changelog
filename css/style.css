@@ -1,0 +1,12 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #237aff;
+}
+
+.card-title {
+  display: inline-block !important;
+}
+
+ul {
+  font-size: 15px;
+}
