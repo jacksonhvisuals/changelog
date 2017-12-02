@@ -1,5 +1,5 @@
 var userName = "jacksonhvisuals";
-var repoName = "5217-web";
+var repoName = "quicksilver";
 
 var change = document.getElementById("logContainer");
 var changeRequest = new XMLHttpRequest();
@@ -17,7 +17,14 @@ changeRequest.onreadystatechange = function() {
         }
         console.log(change.published_at);
         var releaseDate = new Date(change.published_at);
-        var newName = change.name.replace(/\./g, "_");
+        function rep(d){
+          if (d != null) {
+            d.replace(/\./g, "_");
+          }
+          return d;
+
+        }
+        var newName = rep(change.tagName);
         html += "<div id=" + newName + " class=\"card\"><div class=\"card-content\"><span class=\"card-title\">" + change.name + "</span><div class=\"right reldate\">[" + releaseType + "] " + releaseDate.toLocaleDateString() + "</div><br>" +  change.body + "</div></div>";
 
       });
