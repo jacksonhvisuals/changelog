@@ -13,7 +13,7 @@ changeRequest.onreadystatechange = function() {
       
       JSON.parse(changeRequest.responseText).forEach(function(change) {
         if (change.prerelease === true) {
-          releaseType = "Pre-Release";
+          releaseType = "[Pre-Release]";
         }
         console.log(change.published_at);
         var releaseDate = new Date(change.published_at);
@@ -25,7 +25,7 @@ changeRequest.onreadystatechange = function() {
 
         }
         var newName = rep(change.tagName);
-        html += "<div id=" + newName + " class=\"card\"><div class=\"card-content\"><span class=\"card-title\">" + change.name + "</span><div class=\"right reldate\">[" + releaseType + "] " + releaseDate.toLocaleDateString() + "</div><br>" +  change.body + "</div></div>";
+        html += "<div id=" + newName + " class=\"card\"><div class=\"card-content\"><span class=\"card-title\">" + change.name + "</span><div class=\"right reldate\">" + releaseType + " " + releaseDate.toLocaleDateString() + "</div><br>" +  change.body + "</div></div>";
 
       });
       change.innerHTML = html;
